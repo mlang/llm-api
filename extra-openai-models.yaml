@@ -1,0 +1,4 @@
+- model_id: local
+  model_name: local
+  api_base: "http://127.0.1.9:8080"
+  vision: true

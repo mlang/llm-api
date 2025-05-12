@@ -1,0 +1,9 @@
+[Unit]
+Description=LLM API server
+
+[Service]
+Type=exec
+ExecStart=make -C "%Y" llm-api
+
+[Install]
+WantedBy=default.target
