@@ -1,4 +1,5 @@
-MODEL = ggml-org/Qwen2.5-VL-7B-Instruct-GGUF
+MODEL = ggml-org/Qwen2.5-Omni-7B-GGUF
+#MODEL = ggml-org/Qwen2.5-VL-7B-Instruct-GGUF
 #MODEL = ggml-org/pixtral-12b-GGUF
 #MODEL = ggml-org/gemma-3-12b-it-GGUF
 #MODEL = ggml-org/InternVL3-14B-Instruct-GGUF
@@ -8,6 +9,7 @@ HOST = 127.0.1.9
 PORT = 8080
 
 LLAMASERVERFLAGS += --hf-repo $(MODEL)
+LLAMASERVERFLAGS += --jinja
 LLAMASERVERFLAGS += --host $(HOST)
 LLAMASERVERFLAGS += --port $(PORT)
 LLAMASERVERFLAGS += --no-webui

@@ -1,4 +1,12 @@
 - model_id: local
   model_name: local
   api_base: "http://127.0.1.9:8080"
+  audio: true
   vision: true
+- model_id: local-tools
+  model_name: local
+  api_base: "http://127.0.1.9:8080"
+  audio: true
+  vision: true
+  supports_tools: true
+  can_stream: false
